@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights Cupcakes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">Sweet Delights</a></div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="" onclick="openSignup()">Signup</a></li>
+        </ul>
+    </nav>
+
+    <div class="login-container" style="visibility: hidden;">
+        <svg xmlns="http://www.w3.org/2000/svg" id="close-btn" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        <div class="login-header">
+            <h1>Welcome back</h1>
+            <p>Please enter your details to sign in</p>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required placeholder="Enter your password">
+            </div>
+            <button type="submit" class="login-button">Sign in</button>
+        </form>
+        
+        <div class="login-footer">
+            <span>Don't have an account?</span>
+            <a href="#" id="signup">Sign up</a>
+            <br>
+            
+            <a href="#">Forgot password?</a>
+        </div>
+    </div>
+  
+    <div class="signup-container" style="visibility: hidden;">
+      <svg xmlns="http://www.w3.org/2000/svg" id="close-btn1" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      <div class="signup-header">
+          <h1>Join with us</h1>
+          <p>Please enter your details to sign up</p>
+      </div>
+      <form>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" required placeholder="Enter your password">
+          </div>
+          <div class="form-group">
+            <label for="password">Confirm Password</label>
+            <input type="password" id="password" required placeholder="Confirm your password">
+          </div>
+          <button type="submit" class="signup-button">Sign up</button>
+      </form>
+      <div class="signup-footer">
+          <span>Already have an account?</span>
+          <a href="#" id="signin">Sign in</a>
+          
+          
+        
+      </div>
+  </div>
+
+
+
+
+
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Delicious Cupcakes</h1>
+            <p>Handcrafted with love, baked to perfection</p>
+            <a href="#menu" class="cta-button">View Our Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Cupcakes</h2>
+        <div class="cupcake-grid" id="cupcake-grid">
+            <!-- Cupcakes will be added dynamically via JavaScript -->
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>Sweet Delights has been crafting delicious cupcakes since 1970. Our passion for baking and dedication to quality ingredients makes our cupcakes truly special.</p>
+            <div class="features">
+                <div class="feature">
+                    <h3>Fresh Daily</h3>
+                    <p>Baked fresh every morning</p>
+                </div>
+                <div class="feature">
+                    <h3>Quality Ingredients</h3>
+                    <p>Only the finest ingredients used</p>
+                </div>
+                <div class="feature">
+                    <h3>Custom Orders</h3>
+                    <p>Special orders welcome</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <form id="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit" class="button-cf">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>📍 Sanfrancisco, Talibon, Bohol</p>
+                <p>📞 +639123456789</p>
+                <p>✉️ info@sweetdelights.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sweet Delights. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
